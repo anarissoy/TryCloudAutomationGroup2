@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features" ,
         glue = "com/TryCloud/step_defs" ,
         dryRun = false,
-        tags = "@multipleLogin",
+        tags = "@TC1 or @TC2",
         publish = true
 
 )
