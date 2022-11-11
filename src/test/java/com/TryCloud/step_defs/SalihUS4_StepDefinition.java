@@ -30,10 +30,10 @@ public class SalihUS4_StepDefinition {
             }
         }
     }
-//    @Then("verify the page title is {string}")
-//    public void verifyThePageTitleIs(String expectedTitle) {
-//        Assert.assertEquals(expectedTitle, Driver.getDriver().getTitle());
-//    }
+    @Then("verify the page title is {string}")
+    public void verifyThePageTitleIs(String expectedTitle) {
+        Assert.assertEquals(expectedTitle, Driver.getDriver().getTitle());
+    }
 
 //    ==================================================
 
@@ -46,7 +46,7 @@ public class SalihUS4_StepDefinition {
     @Then("verify all the files are selected")
     public void verifyAllTheFilesAreSelected() {
         for (WebElement each : us4Page.isSelected) {
-            each.isSelected();
+            Assert.assertTrue(each.isSelected());
         }
     }
 }
