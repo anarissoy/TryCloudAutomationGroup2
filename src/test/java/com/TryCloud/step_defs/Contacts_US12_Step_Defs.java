@@ -9,10 +9,9 @@ import com.TryCloud.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.apache.commons.configuration.ConfigurationUtils;
 import org.junit.Assert;
 
-public class Contacts_Step_Defs extends BasePage{
+public class Contacts_US12_Step_Defs extends BasePage{
     LoginPage loginPage = new LoginPage();
     Marjan_ContactsPage contactsPage = new Marjan_ContactsPage();
 
