@@ -3,9 +3,9 @@ package com.TryCloud.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class LoginPage extends BasePage {
+public class LoginPage_Farag  extends BasePage{
 
-    @FindBy (css = "input#user")
+    @FindBy(css = "input#user")
     public WebElement inputUsername;
 
     @FindBy (css = "input#password")
@@ -19,5 +19,7 @@ public class LoginPage extends BasePage {
         inputPassword.sendKeys(passWord);
         loginButton.click();
     }
+
+
 
 }
