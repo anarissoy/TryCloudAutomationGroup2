@@ -3,6 +3,8 @@ package com.TryCloud.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 public class LoginPage extends BasePage {
 
     @FindBy (css = "input#user")
@@ -19,5 +21,7 @@ public class LoginPage extends BasePage {
         inputPassword.sendKeys(passWord);
         loginButton.click();
     }
+
+
 
 }

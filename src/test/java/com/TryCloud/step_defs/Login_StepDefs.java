@@ -1,6 +1,7 @@
 package com.TryCloud.step_defs;
 
 import com.TryCloud.pages.LoginPage;
+import com.TryCloud.pages.MainModulesPage;
 import com.TryCloud.utilities.BrowserUtils;
 import com.TryCloud.utilities.ConfigurationReader;
 import com.TryCloud.utilities.Driver;
@@ -9,13 +10,21 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.WebElement;
 
-public class Login_StepDefs {
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+public class Login_StepDefs  {
 
     LoginPage loginPage = new LoginPage();
 
+
+
     @Given("user on the login page")
     public void user_on_the_login_page() {
+
         Driver.getDriver().get(ConfigurationReader.getProperty("env"));
     }
     @When("user use username and password and login")
@@ -29,6 +38,9 @@ public class Login_StepDefs {
 
     @When("user use {string} and {string} and login")
     public void userUseAndAndLogin(String username, String password) {
+
         loginPage.login(username,password);
     }
+
+
 }
