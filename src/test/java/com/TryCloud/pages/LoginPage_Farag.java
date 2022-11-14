@@ -19,7 +19,4 @@ public class LoginPage_Farag  extends BasePage{
         inputPassword.sendKeys(passWord);
         loginButton.click();
     }
-
-
-
 }
