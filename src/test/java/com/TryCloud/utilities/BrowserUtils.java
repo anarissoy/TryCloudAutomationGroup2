@@ -55,6 +55,15 @@ public class BrowserUtils {
         wait.until(ExpectedConditions.invisibilityOf(element));
     }
 
+    public static void waitForInvisibilityOf(WebElement element, int second){
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),second);
+        wait.until(ExpectedConditions.invisibilityOf(element));
+    }
+
+    public static void waitForVisibilityOf(WebElement element, int second) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), second);
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
 
     /**
      * This method will accept dropdown as a WebElement
