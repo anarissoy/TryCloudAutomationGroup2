@@ -95,5 +95,6 @@ public class UserStory6_StepDefs {
         Driver.getDriver().navigate().refresh();
         System.out.println(userStory6Page.recomendBtn.getText());
         Assert.assertTrue(userStory6Page.recomendBtn.getText().contains("anaris - Copy (5).txt"));
+
     }
 }

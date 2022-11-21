@@ -43,6 +43,7 @@ public class UserStory6Page extends BasePage{
     @FindBy (css= "#uploadprocessbar")
     public WebElement uploadBar;
 
+
     @FindBy (xpath = "//div[@id='recommendations']")
     public WebElement recomendBtn;
 
