@@ -1,3 +1,4 @@
+@us11
 Feature: As a user, I should be able to access to Talks module
 
   @talksmodule1
@@ -11,9 +12,9 @@ Feature: As a user, I should be able to access to Talks module
     Examples:
       | username | password    |
       | user2    | Userpass123 |
-      | user32   | Userpass123 |
-      | user62   | Userpass123 |
-      | user92   | Userpass123 |
+#      | user32   | Userpass123 |
+#      | user62   | Userpass123 |
+#      | user92   | Userpass123 |
 
 
   @talksmodule2
@@ -31,6 +32,6 @@ Feature: As a user, I should be able to access to Talks module
     Examples:
       | username | password    |
       | user2    | Userpass123 |
-      | user32   | Userpass123 |
-      | user62   | Userpass123 |
-      | user92   | Userpass123 |
+#      | user32   | Userpass123 |
+#      | user62   | Userpass123 |
+#      | user92   | Userpass123 |

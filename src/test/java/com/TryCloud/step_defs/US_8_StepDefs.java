@@ -6,7 +6,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class DeletedFile_StepDef {
+public class US_8_StepDefs {
 
     DeletedFilePage_Gulru deletedFilePage_gulru = new DeletedFilePage_Gulru();
     LoginPage loginPage = new LoginPage();
@@ -14,10 +14,10 @@ public class DeletedFile_StepDef {
 
 
 
-    @Given("the user clicks the Files module")
-    public void the_user_clicks_the_files_module() {
-        deletedFilePage_gulru.clickFile.click();
-    }
+//    @Given("the user clicks the Files module")
+//    public void the_user_clicks_the_files_module() {
+//        deletedFilePage_gulru.clickFile.click();
+//    }
     @When("user click action-icon  from any file on the page")
     public void user_click_action_icon_from_any_file_on_the_page() {
         deletedFilePage_gulru.optionBox.click();

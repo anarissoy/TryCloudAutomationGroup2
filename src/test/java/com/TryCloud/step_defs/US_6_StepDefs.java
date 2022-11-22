@@ -5,23 +5,14 @@ import com.TryCloud.pages.UserStory6Page;
 import com.TryCloud.utilities.BrowserUtils;
 import com.TryCloud.utilities.ConfigurationReader;
 import com.TryCloud.utilities.Driver;
-import io.cucumber.java.bs.A;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.io.File;
-import java.util.Map;
-
-public class UserStory6_StepDefs {
+public class US_6_StepDefs {
 
     LoginPage loginPage = new LoginPage();
     UserStory6Page userStory6Page = new UserStory6Page();

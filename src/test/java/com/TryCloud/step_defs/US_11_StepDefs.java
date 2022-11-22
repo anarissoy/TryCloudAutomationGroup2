@@ -10,24 +10,15 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 
-public class UserStore11_StepDefs {
+public class US_11_StepDefs {
 
     LoginPage loginPage = new LoginPage();
     UserStore11Page userStore11Page = new UserStore11Page();
 
-    @Given("user is on the login page")
-    public void user_is_on_the_login_page() {
-        Driver.getDriver().get(ConfigurationReader.getProperty("env"));
 
-    }
-    @When("user enters {string} and {string}")
-    public void user_enters_and(String string, String string2) {
-        loginPage.login(string, string2);
 
-    }
+
 
 
 
@@ -39,10 +30,10 @@ public class UserStore11_StepDefs {
 
     }
 
-    @Then("verify the page title is {string}")
-    public void verifyThePageTitleIs(String arg0) {
-        Assert.assertEquals("Talk - Trycloud QA",Driver.getDriver().getTitle());
-    }
+//    @Then("verify the page title is {string}")
+//    public void verifyThePageTitleIs(String arg0) {
+//        Assert.assertEquals("Talk - Trycloud QA",Driver.getDriver().getTitle());
+//    }
 
     // This is test case 2
 

@@ -11,7 +11,7 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 
-public class SalihUS4_StepDefinition {
+public class US_4_StepDefs {
     SalihUS4_Page us4Page = new SalihUS4_Page();
     LoginPage loginPage = new LoginPage();
 

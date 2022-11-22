@@ -1,12 +1,8 @@
+@us8
 Feature:As a user, I should be able to delete a file/folder
 
   Background:
     Given user on the login page
-
-
-
-
-
 
 
   @run

@@ -1,4 +1,4 @@
-@smoke
+@smoke @us6
 Feature: As a user, I should be able to remove files from favorites and upload a file directly
 
   User Story: As a user, I should be able to edit favorites files.
@@ -17,9 +17,9 @@ Feature: As a user, I should be able to remove files from favorites and upload a
     Examples:
       | username | password    |
       | user2    | Userpass123 |
-      | user32   | Userpass123 |
-      | user62   | Userpass123 |
-      | user92   | Userpass123 |
+#      | user32   | Userpass123 |
+#      | user62   | Userpass123 |
+#      | user92   | Userpass123 |
 
 
   @TC2
@@ -34,9 +34,9 @@ Feature: As a user, I should be able to remove files from favorites and upload a
     Examples:
       | username | password    |
       | user2    | Userpass123 |
-      | user32   | Userpass123 |
-      | user92   | Userpass123 |
-      | user62   | Userpass123 |
+#      | user32   | Userpass123 |
+#      | user92   | Userpass123 |
+#      | user62   | Userpass123 |
 
 
 

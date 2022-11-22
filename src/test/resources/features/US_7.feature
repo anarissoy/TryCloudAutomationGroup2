@@ -1,3 +1,4 @@
+@us7
 Feature: As a user, I should be able to remove files from the favorites and upload a file directly
   User Story: As a user, I should be able to manage folders.
 
@@ -14,9 +15,9 @@ Feature: As a user, I should be able to remove files from the favorites and uplo
     Examples:
       | username | password    |
       | user2    | Userpass123 |
-      | user32   | Userpass123 |
-      | user62   | Userpass123 |
-      | user92   | Userpass123 |
+#      | user32   | Userpass123 |
+#      | user62   | Userpass123 |
+#      | user92   | Userpass123 |
 
   @Test2
   Scenario Outline: Verify users can upload a file inside a folder
@@ -31,6 +32,6 @@ Feature: As a user, I should be able to remove files from the favorites and uplo
     Examples:
       | username | password    |
       | user2    | Userpass123 |
-      | user32   | Userpass123 |
-      | user62   | Userpass123 |
-      | user92   | Userpass123 |
+#      | user32   | Userpass123 |
+#      | user62   | Userpass123 |
+#      | user92   | Userpass123 |

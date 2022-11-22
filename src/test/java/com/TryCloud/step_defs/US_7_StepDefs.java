@@ -11,16 +11,10 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.junit.Test;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.awt.*;
-
-public class Kamran_StepDefs {
+public class US_7_StepDefs {
     LoginPage loginPage = new LoginPage();
     KamranPage kamranPage = new KamranPage();
     Faker faker = new Faker();
@@ -32,13 +26,13 @@ public class Kamran_StepDefs {
     public void userShouldEnterAnd(String string, String string2) {
         loginPage.login(string, string2);
     }
-    @When("the user clicks the Files module")
-    public void theUserClicksTheFilesModule() {
-        kamranPage.fileBtn.click();
-        BrowserUtils.waitFor(2);
-        kamranPage.addIconBtn.click();
-        BrowserUtils.waitFor(2);
-    }
+//    @When("the user clicks the Files module")
+//    public void theUserClicksTheFilesModule() {
+//        kamranPage.fileBtn.click();
+//        BrowserUtils.waitFor(2);
+//        kamranPage.addIconBtn.click();
+//        BrowserUtils.waitFor(2);
+//    }
 
     //@Test1
     @And("user click new folder")

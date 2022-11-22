@@ -9,7 +9,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-public class Yadikar_StepDefs {
+public class US_2_StepDefs {
 YadikarPage tryCloudPage=new YadikarPage();
     @Given("user on the login page http:\\/\\/qa3.trycloud.net\\/index.php\\/login?clear={int}")
     public void user_on_the_login_page_http_qa3_trycloud_net_index_php_login_clear(Integer int1) {

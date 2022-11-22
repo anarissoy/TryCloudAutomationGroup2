@@ -12,25 +12,25 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.interactions.Actions;
 
-public class Tulay_US_05_StepDefs {
+public class US_5_StepDefs {
     LoginPage loginPage = new LoginPage();
     Tulay_US_05_Page tulay_us_05_page = new Tulay_US_05_Page();
 
-    @Given("user on the dashboard page")
-    public void userOnTheDashboardPage() {
-        Driver.getDriver().get(ConfigurationReader.getProperty("env"));
-        loginPage.login(ConfigurationReader.getProperty("user2"),ConfigurationReader.getProperty("password"));
-        BrowserUtils.waitFor(3);
-        Assert.assertEquals("Dashboard - Trycloud",Driver.getDriver().getTitle());
-        BrowserUtils.waitFor(3);
-    }
-
-    @When("the user clicks the Files module")
-    public void the_user_clicks_the_files_module() {
-
-        Tulay_US_05_Page.files.click();
-        BrowserUtils.waitFor(3);
-    }
+//    @Given("user on the dashboard page")
+//    public void userOnTheDashboardPage() {
+//        Driver.getDriver().get(ConfigurationReader.getProperty("env"));
+//        loginPage.login(ConfigurationReader.getProperty("user2"),ConfigurationReader.getProperty("password"));
+//        BrowserUtils.waitFor(3);
+//        Assert.assertEquals("Dashboard - Trycloud",Driver.getDriver().getTitle());
+//        BrowserUtils.waitFor(3);
+//    }
+//
+//    @When("the user clicks the Files module")
+//    public void the_user_clicks_the_files_module() {
+//
+//        Tulay_US_05_Page.files.click();
+//        BrowserUtils.waitFor(3);
+//    }
 
     @When("the user clicks action-icon  from any file on the page")
     public void theUserClicksActionIconFromAnyFileOnThePage() {

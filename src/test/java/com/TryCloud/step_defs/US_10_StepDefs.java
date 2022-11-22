@@ -1,7 +1,6 @@
 package com.TryCloud.step_defs;
 
 import com.TryCloud.pages.FilesPageMayira;
-import com.TryCloud.utilities.BrowserUtils;
 import com.TryCloud.utilities.ConfigurationReader;
 import com.TryCloud.utilities.Driver;
 import io.cucumber.java.en.Given;
@@ -16,17 +15,17 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class US10_StepDefs_Mayira {
+public class US_10_StepDefs {
 
     FilesPageMayira filesPage = new FilesPageMayira();
     int initialUsage = 0;
 
 
-    @Given("user on the dashboard page")
-    public void user_on_the_dashboard_page() {
-        Driver.getDriver().get(ConfigurationReader.getProperty("env"));
-        filesPage.login(ConfigurationReader.getProperty("user32"), ConfigurationReader.getProperty("password"));
-    }
+//    @Given("user on the dashboard page")
+//    public void user_on_the_dashboard_page() {
+//        Driver.getDriver().get(ConfigurationReader.getProperty("env"));
+//        filesPage.login(ConfigurationReader.getProperty("user32"), ConfigurationReader.getProperty("password"));
+//    }
 
     @When("user clicks the {string} module")
     public void user_clicks_the_module(String module) {
