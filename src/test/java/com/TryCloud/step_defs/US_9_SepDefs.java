@@ -5,6 +5,7 @@ import com.TryCloud.pages.WriteCommentPage_Denys;
 import com.TryCloud.utilities.BrowserUtils;
 import com.TryCloud.utilities.ConfigurationReader;
 import com.TryCloud.utilities.Driver;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -13,7 +14,8 @@ import org.junit.Assert;
 public class US_9_SepDefs {
     LoginPage loginPage = new LoginPage();
     WriteCommentPage_Denys writeCommentPage_denys = new WriteCommentPage_Denys();
-//
+
+    //
 //    @Given("user on the dashboard page")
 //    public void user_on_the_dashboard_page() {
 //        Driver.getDriver().get(ConfigurationReader.getProperty("env"));
@@ -36,11 +38,11 @@ public class US_9_SepDefs {
 //        writeCommentPage_denys.threeDots.click();
 //    }
 //
-//    @When("user choose the {string} option")
-//    public void user_choose_the_option(String string) {
-//        writeCommentPage_denys.detailsOption.click();
-//
-//    }
+    @And("the user choose the {string} option")
+    public void theUserChooseTheOption(String arg0) {
+        writeCommentPage_denys.detailsOption.click();
+    }
+
 
     @When("user write a comment inside the input box")
     public void user_write_a_comment_inside_the_input_box() {
@@ -66,4 +68,6 @@ public class US_9_SepDefs {
         Assert.assertEquals(expectedMessage, actualMessage);
 
     }
+
+
 }

@@ -17,7 +17,7 @@ public class Tulay_US_05_Page extends BasePage{
     @FindBy(xpath = "//input[@id='submit-form']")
     public WebElement loginBtn;
 
-    @FindBy(xpath = "(//span[@class='icon icon-more'])[2]")
+    @FindBy(xpath = "(//span[@class='icon icon-more'])[5]")
     public  static WebElement actionsBtn;
 
     @FindBy(xpath = "//span[text()='Add to favorites']")

@@ -12,7 +12,7 @@ public class WriteCommentPage_Denys {
          @FindBy(xpath = "//ul[@id='appmenu']//a[@aria-label='Files']")
                  public WebElement filesModule;
 
-     @FindBy(xpath = "(//span[@class='icon icon-more'])[2]")
+     @FindBy(xpath = "(//span[@class='icon icon-more'])[3]")
     public WebElement threeDots;
 
 
