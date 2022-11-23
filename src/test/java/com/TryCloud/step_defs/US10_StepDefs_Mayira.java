@@ -19,8 +19,7 @@ import java.util.List;
 public class US10_StepDefs_Mayira {
 
     FilesPageMayira filesPage = new FilesPageMayira();
-    int initialUsage = 0;
-
+    String initialUsage = "";
 
     @Given("user on the dashboard page")
     public void user_on_the_dashboard_page() {
@@ -48,7 +47,7 @@ public class US10_StepDefs_Mayira {
 
     @When("user checks the current storage usage")
     public void user_checks_the_current_storage_usage() {
-        initialUsage = filesPage.returnNumberFromUsage(filesPage.usage);
+        initialUsage = filesPage.usage.getText();
     }
 
     @When("user uploads file with the upload file option")
@@ -68,8 +67,8 @@ public class US10_StepDefs_Mayira {
 
     @Then("user should be able to see storage usage is increased")
     public void user_should_be_able_to_see_storage_usage_is_increased() {
-        int updatedUsage = filesPage.returnNumberFromUsage(filesPage.usage);
-        Assert.assertTrue(updatedUsage > initialUsage);
+        String updatedUsage = filesPage.usage.getText();
+        Assert.assertFalse(updatedUsage.equals(initialUsage));
     }
 
 }
